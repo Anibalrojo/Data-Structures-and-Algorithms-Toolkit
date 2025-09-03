@@ -5,6 +5,11 @@ A linked list is a linear data structure where elements are not stored in contig
 
 Unlike an array where elements are indexed and easily accessed, traversing a linked list requires you to start at the head and follow the pointers from one node to the next.
 
+It's important to note that the most common method for resolving collisions is **separate chaining**:
+- In this approach, each slot of the hash table's array doesn't store a single key-value pair but instead stores a **pointer** to a **linked list**.
+- When a collision occurs, the new key-value pair is simply added as a new node to the linked list at that array index.
+- This allows multiple items to coexist at the same index without overwriting each other, but a large number of collisions at one index can cause the linked list to grow long, which can degrade performance from $O(1)$ to $O(n)$ for that specific bucket.
+
 
 ## Pros
 - **Dynamic size**: can grow or shrink as needed during execution 
