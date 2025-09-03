@@ -52,11 +52,3 @@ Each data structure and algorithm has its own directory containing:
 2. Implementation in various programming languages
 3. Example usage
 4. Time and space complexity analysis
-
-## Contributing
-
-Contributions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
