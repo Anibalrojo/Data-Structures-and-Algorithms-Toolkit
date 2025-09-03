@@ -4,7 +4,7 @@ A comprehensive collection of data structures and algorithms implemented in mult
 
 ## Overview
 
-This repository contains implementations and explanations of the most commonly used data structures and algorithms in computer science and software engineering. Each implementation includes detailed explanations of the underlying concepts, time and space complexity analysis, and practical usage examples.
+This repository it's a work in process. It's objective it's to contain implementations and explanations of the most commonly used data structures and algorithms in computer science and software engineering. Each implementation includes detailed explanations of the underlying concepts, time and space complexity analysis, and practical usage examples.
 
 ## Contents
 
