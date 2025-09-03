@@ -48,7 +48,7 @@ Graphs come in many forms, depending on the nature of their connections:
 
 ## Implementation Notes
 
-Graphs are among the most complex data structures to implement effectively. They can be stored in memory using several methods, each with its own trade-offs:
+In this repo, graphs are probably the most complex data structures to implement effectively. They can be stored in memory using several methods, each with its own trade-offs:
 
 ### Representation Methods
 
@@ -63,9 +63,11 @@ Graphs are among the most complex data structures to implement effectively. They
    * **Cons**: Consumes a lot of memory ($O(n^2)$), making it inefficient for large, sparse graphs.
 
 3. **Edge List**
-   * **Description**: The simplest representation - a list of all edges in the graph, with each edge represented as a pair of nodes.
+   * **Description**: The simplest representation. It consists of a list of all edges in the graph, with each edge represented as a pair of nodes.
    * **Pros**: Simple to implement and efficient for small graphs.
    * **Cons**: Inefficient for finding the neighbors of a given node.
+
+In this repo, they are implemented using adjacency lists.
 
 ## Visualization Resources
 
