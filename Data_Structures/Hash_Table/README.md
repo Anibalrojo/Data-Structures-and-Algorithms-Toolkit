@@ -36,6 +36,6 @@ A hash table (hash map, dictionaries) is a data structure that implements an ass
 ## Implementation
 The core of the implemention involves:
 - A **hash function** to map keys to an index in the list. A good hash function should distribute keys uniformly across the table to minimize collisions.
-- A **collision resolution** method when multiple keys map to the same index. THe most common method it's called **¨separated chaining**, where each index of the main array points to a secondary data structure, like in this case, a list. This method origins the concepts of **pointers** and **linked lists**
+- A **collision resolution** method when multiple keys map to the same index. The most common method it's called **separated chaining**, where each index of the main array points to a secondary data structure, like in this case, a list. This method origins the concepts of **pointers** and **linked lists**
 
 
