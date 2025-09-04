@@ -1,7 +1,5 @@
 """
-Array Implementation
-A custom Array implementation using Python dictionaries.
-
+Array Implementation using dictionaries.
 Unlike traditional arrays, this implementation uses a dictionary for storage, allowing for
 dynamic resizing while maintaining O(1) access time.
 """

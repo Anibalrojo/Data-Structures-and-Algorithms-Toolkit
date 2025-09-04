@@ -1,8 +1,8 @@
 """
 Hash Table Implementation
 
-A simple hash table implementation for educational purposes.
-This implementation uses separate chaining for collision resolution.
+A simple hash table implementation that uses separate chaining for collision resolution.
+For this implementation, we use Python lists to handle collisions through chaining.
 """
 
 
@@ -26,7 +26,7 @@ class HashTable:
 
     def _hash_function(self, key):
         """
-        Convert a key into an index in our table.
+        Convert a key into an index in our table. Uses the built-in hash function in Python.
         
         Args:
             key: The key to hash (must be hashable)
@@ -122,6 +122,17 @@ class HashTable:
         Return a string representation of the hash table.
         """
         return str(self.table)
+
+    def __repr__(self):
+        """
+        Official string representation of the hash table.
+        Shows key-value pairs in dictionary format.
+        """
+        pairs = []
+        for bucket in self.table:
+            for key, value in bucket:
+                pairs.append(f"{repr(key)}: {repr(value)}")
+        return f"HashTable({{{', '.join(pairs)}}})"
 
 
 # Example usage
