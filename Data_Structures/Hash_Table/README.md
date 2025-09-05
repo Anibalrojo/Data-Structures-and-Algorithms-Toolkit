@@ -38,4 +38,9 @@ The core of the implemention involves:
 - A **hash function** to map keys to an index in the list. A good hash function should distribute keys uniformly across the table to minimize collisions.
 - A **collision resolution** method when multiple keys map to the same index. The most common method it's called **separated chaining**, where each index of the main array points to a secondary data structure, like in this case, a list. This method origins the concepts of **pointers** and **linked lists**.
 
+## Note
+This hash table Python implementation was made using lists of lists, instead of the built-in dictionary data structure. This decision was made to focus on key-value mapping and collision handling.
+1. The outer list represents your buckets (fixed size array)
+2. Each inner list represents a chain of key-value pairs for collision resolution
+3. This structure directly models the separate chaining collision resolution strategy 
 

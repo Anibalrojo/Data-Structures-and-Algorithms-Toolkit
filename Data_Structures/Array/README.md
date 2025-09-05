@@ -31,3 +31,13 @@ An array is a collection of elements stored at contiguous memory locations. It i
 | Insertion | O(n)           | Adding an element at a specific position |
 | Deletion  | O(n)           | Removing an element from the array |
 | Traversal | O(n)           | Visiting each element in the array |
+
+## Note
+This Array Python implementation uses a built-in dictionary data structure, instead of the list built-in structure. This decision was taken because:
+
+1. Dictionaries in Python provide $O(1)$ average case access time
+2. They allow to use integers as indices (keys)
+3. They naturally support dynamic resizing
+4. They don't require contiguous memory allocation
+
+This approach gives the "array-like" indexing behavior while allowing dynamic resizing without having to manually reallocate memory.
